@@ -7,6 +7,9 @@ An integer n is a power of two, if there exists an integer x such that n == 2x.
 
 class Solution:
     def isPowerOfTwo(self, n: int) -> bool:
+
+
+# intuitive solution
         x=0
         while 2**x<=n:
             if 2**x==n:
@@ -17,3 +20,6 @@ class Solution:
             return True
         else:
             return False
+        
+# bit manipulation
+        return n>0 and n&(n-1)==0
