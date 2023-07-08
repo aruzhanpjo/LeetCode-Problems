@@ -19,3 +19,16 @@ class Solution:
             return True
         else:
             return False
+
+
+# New solution with Counter() implementation. Runtime 44ms (beats 98.96%), memory 16.9 MB (beats 964.4%)
+from collections import Counter
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        set1 = dict(Counter(s))
+        set2 = dict(Counter(t))
+
+        if set1==set2:
+            return True
+        else:
+            return False
