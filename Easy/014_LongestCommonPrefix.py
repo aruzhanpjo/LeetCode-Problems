@@ -5,6 +5,7 @@ If there is no common prefix, return an empty string "".
 """
 
 
+#95.74% beats, runtime: 40ms, memory: 16.5MB
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         word=""
