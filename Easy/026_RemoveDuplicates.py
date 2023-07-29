@@ -32,3 +32,14 @@ class Solution:
 
         k = len(nums)
         return k
+    
+
+
+    # optimized the solution + learned new python methods
+
+    class Solution:
+        def removeDuplicates(self, nums: List[int]) -> int:
+            # nums[:] basically means a shallow copy of nums
+            # sorted is a function that returns a sorted list, while .sort() is a method that sorts the list in place
+            nums[:] = list(sorted(set(nums)))
+            return len(nums)
