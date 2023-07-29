@@ -36,7 +36,7 @@ class Solution:
 
 
     # optimized the solution + learned new python methods
-
+    # runtime - 80ms, beats 99.64%, memory - 18.04MB, beats 15,94%
     class Solution:
         def removeDuplicates(self, nums: List[int]) -> int:
             # nums[:] basically means a shallow copy of nums
